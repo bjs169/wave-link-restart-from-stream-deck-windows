@@ -1,5 +1,9 @@
 # wave-link-restart-from-stream-deck-windows
 
+## Create a button on your Elgato Stream Deck that forces a restart of Elgato Wave Link
+
+Yeah. It's that wonky that I need a button.
+
 - Download `RestartWaveLink.bat` and put it where you want it on disk.
 - Download `ScriptLaunder.vbs` and put it where you want it on disk. This is optional but it's a wrapper around BAT, CMD, and PS1 scripts that launches them without a console window popping up and disappearing. I use it for all my scheduled tasks.
 - Look at `RestartWaveLinkTaskDefinition.png` and set up a scheduled task to match. Name it "Restart Wave Link". You can also look at `Restart Wave Link Clean.xml` to see the exported XML definition of the task. You won't be able to import this into Task Scheduler since I had to clean out my personal info. But it might help you if you get confused.
