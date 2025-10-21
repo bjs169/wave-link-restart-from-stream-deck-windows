@@ -11,6 +11,13 @@
     - You will need the Windows Cockpit plug-in or a similar plug-in that can lanuch a command with arguments.
     - If using Windows Cockpit then choose option "#116 | Start Windows Process".
     - Set the Process Name to `"C:\Windows\System32\schtasks.exe" /run /tn "\Restart Wave Link"`
+    - See `RestartWaveLinkButtonDefinition.png` for a screenshot.
 - You could skip the Task Scheduler definition and just set your SD button to call `wscript.exe "C:\Users\--- your-name-here ---\Documents\_BatchScipts\ScriptLaunder.vbs" "C:\Users\--- your-name-here ---\Documents\_BatchScipts\RestartWaveLink.bat` but . . .
     - I just have Wave Link restart every hour or so. This is fine for my workflow. Thus, my button just resues the existing task to force a restart when I need a forced restart.
     - I sometimes found I needed to be elevate to admin to kill the Wave Link process. I'd get the disruptive UAC dialog pop up. By setting the task to "Run with highest privileges" you auto-elevate to admin without UAC pop up. Cool trick. 
+
+![RestartWaveLinkTaskDefinition.png](RestartWaveLinkTaskDefinition.png)
+
+![RestartWaveLinkTaskDefinitionActionTabDetail.png](RestartWaveLinkTaskDefinitionActionTabDetail.png)
+
+![RestartWaveLinkButtonDefinition.png](RestartWaveLinkButtonDefinition.png)
